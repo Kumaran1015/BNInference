@@ -1,0 +1,6 @@
+b:c:a,d:c:a	a
+b:c:a,e:b:c	b
+d:c:a,e:b:c	c
+b:c:a,e:b:c	c
+b:c:a,d:c:a	c
+d:c:a,f:d	d

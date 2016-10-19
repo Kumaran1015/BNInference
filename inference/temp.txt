@@ -1,0 +1,19 @@
+HashMap<HashMap<String,String> , Double> numerator = new HashMap<HashMap<String,String> , Double>(value.CPD);
+
+           Iterator<String> iter = value.incomingMessage.keySet().iterator();
+
+           System.out.println("Root : "+key.toString());
+
+           System.out.println("Numerator : "+value.CPD.toString());
+
+           System.out.println("Incoming Msg : "+value.incomingMessage.toString());
+
+           while(iter.hasNext()){
+
+               String str = iter.next();
+
+               HashMap<HashMap<String,String> , Double> denominator = value.incomingMessage.get(str);
+
+               HashMap<HashMap<String,String> , Double> quotient = divide(numerator,denominator);
+
+               numerator = new HashMap<HashMap<String,String> , Double>(value.CPD);
